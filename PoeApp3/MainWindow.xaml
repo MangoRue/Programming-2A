@@ -1,0 +1,25 @@
+﻿<Window x:Class="PoeApp3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PoeApp3"
+        mc:Ignorable="d"
+        Title="Recipe Application" Height="400" Width="400">
+    <Grid>
+        <Frame x:Name="Main"></Frame>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="WELCOME" FontSize="30" FontWeight="Bold" Width="184" Height="53" TextAlignment="Center" TextWrapping="Wrap"/>
+        <Button  Grid.Row="1" x:Name="Recipe2" Content="Add New Recipe" FontSize="15" Click="RecipeButton_Click" Width="128" Margin="10"/>
+        <Button  Grid.Row="2" x:Name="Adjustments" Content="Adjust" FontSize="15" Click="AdjustButton_Click" Width="128" Margin="10"/>
+        <Button Grid.Row="3"  x:Name="Display" Content="Display " FontSize="15" Click="DisplayButton_Click" Width="128" Margin="10"/>
+        <Button Grid.Row="4"  x:Name="Exit" Content="Exit" FontSize="15" Click="ExitButton_Click" Width="128" Margin="10"/>
+    </Grid>
+</Window>
